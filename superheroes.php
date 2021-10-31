@@ -65,7 +65,7 @@ $superheroes = [
 
 
 $message="";
-$query=  $_SERVER["query"]; 
+
 $query= filter_input(INPUT_GET, "query", FILTER_SANITIZE_STRING);
 
 if (strlen($query)>0){
